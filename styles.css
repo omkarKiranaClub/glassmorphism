@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: none;
+  font-family: "Lato";
+  color: white;
+}
+
+body.mylandingpage {
+  height: 100vh;
+  width: 100%;
+  background: url("./assets/Desktop\ -\ 4-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h2 {
+  font-size: 32px;
+  color: white;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  width: 50%;
+  justify-content: space-between;
+}
+
+li {
+  font-family: "Sansita", sans-serif;
+  color: #bababa;
+  font-size: 26px;
+}
+
+h3 {
+  font-family: "Smooch", cursive;
+  font-size: 96px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.16);
+  border-radius: 18px;
+  font-size: 26px;
+  padding: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+  font-family: "Sansita", sans-serif;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.glass {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  box-shadow: 0 4px 4px rgba(255, 255, 255, 0.25),
+    0 -4px 4px rgba(255, 255, 255, 0.25);
+  padding-bottom: 5%;
+  /* box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: #bababa;
+  position: relative;
+}
+
+.navlinks a:hover {
+  transition: 0.4s;
+  color: white;
+}
+
+.navlinks a:after {
+  color: white;
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  height: 3px;
+  width: 0%;
+  bottom: -6px;
+  left: 0%;
+  transition: 0.4s;
+  z-index: 20;
+}
+
+.navlinks a:hover::after {
+  width: 100%;
+}
